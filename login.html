@@ -13,13 +13,97 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_.css" rel="stylesheet">
+    <!-- EL CSS -->
     <style type="text/css">
-      @media (min-width: 800px) and (max-width: 850px) {
-              .navbar:not(.top-nav-collapse) {
-                  background: #1C2331!important;
-              }
-          }
+html,
+body,
+.view {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
+/* Full Page Carousel itself*/
+.carousel {
+  height: 100%; }
+  .carousel .carousel-inner {
+    height: 100%; }
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+      height: 100%; }
+
+/* Navbar animation */
+.navbar {
+  background-color: transparent;
+  margin: 0;
+padding: 0;
+box-shadow: none !important; }
+
+.top-nav-collapse {
+  background-color: #1C2331; }
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331; } }
+
+@media (min-width: 360px) and (max-width: 767.98px) {
+.navbar {
+ background-color: #1C2331;
+  width: 72% !important;
+margin-left: 1%; }
+
+.logo_mpps {
+  height: 1em;
+  margin-left: 18% !important;}
+.titulo {
+  margin-left: 1%;
+  display: block;
+  text-align: center !important;
+  margin-top: -10%;
+}
+.container__form{
+  left: -38%;
+}
+html{
+  overflow-x: hidden;
+  height: 700px;
+  width: 100%;
+}
+}
+.cont_custom{
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  z-index: 999;}
+.container__form{
+  background-color: rgba(0, 0, 0, 0.473);
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 3px 21px -2px rgba(0, 0, 0, 0.795);
+-moz-box-shadow: 0px 3px 21px -2px rgba(0, 0, 0, 0.774);
+box-shadow: 0px 3px 21px -2px rgba(0, 0, 0, 0.76);}
+.logo_mpps{
+  background: url(../img/logo-a.png) no-repeat left;
+  background-size: contain;
+  width: 100%;
+  height: 3em;
+  margin: 0;
+  padding: 0;}
+.titulo{
+  color: #fff;
+  font-weight: bolder;
+  text-align: right;}
+.btnn__custom:hover{
+  color: #fff !important;
+  background: #33b5e5 !important;}
+.d-flex p{
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: 10%;
+  position: absolute;
+  left: 32%;}
+.carousel-item{
+  z-index: -999;}
     </style>
 </head>
 
